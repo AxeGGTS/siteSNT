@@ -15,6 +15,9 @@ html,body{
     background: black;
   text-decoration: none;
 }
+.QR{
+  height: 300px;
+}
 .icons{
   display: inline-flex;
 }
