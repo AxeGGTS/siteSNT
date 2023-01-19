@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>3D Layered Hover Effect | CodingNepal</title>
+      <link rel="stylesheet" href="styleC.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+
+   <body onload="myFunction()" style="margin:0;">
+      <div id="loader"></div>
+  
+      <div style="display:none;" id="myDiv" class="animate-bottom">
+         
+    <H1>Site fait entièrement par:</H1>
+    <h2>Matteo Bieth-Darstein</h2>
+    <h2>et Luka Schreiber</h2>
+    <li>voici le QR code pour le site:</li>
+    <br>
+    <img src="./images/frame.png" alt="QR code">
+    <br>
+    <br>
+<br>
+    <a href="https://axeggts.github.io/site-snt/"><img src="./images/logonav.png" alt="logo" class="logo"></a>
+    <br>
+    <div class="espace">
+    <h1>voici où nous contacter:</h1>
+    </div>
+      <div class="icons">
+         <a href="https://www.tiktok.com/@mbddu68">
+            <div class="layer">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span class="fab fa-tiktok"></span>
+            </div>
+            <div class="text">
+               Tiktok
+            </div>
+         </a>
+         <a href="https://twitter.com/axeggts">
+            <div class="layer">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span class="fab fa-twitter"></span>
+            </div>
+            <div class="text">
+               Twitter
+            </div>
+         </a>
+         <a href="https://www.instagram.com/05864433956user/">
+            <div class="layer">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span class="fab fa-instagram"></span>
+            </div>
+            <div class="text">
+               Instagram
+            </div>
+         </a>
+         <a href="https://github.com/AxeGGTS/site-snt">
+            <div class="layer">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span class="fab fa-github"></span>
+            </div>
+            <div class="text">
+               GitHub
+            </div>
+         </a>
+         <a href="https://www.youtube.com/channel/UCV7lUfu7ku7qkzFlYnUT20Q">
+            <div class="layer">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span class="fab fa-youtube"></span>
+            </div>
+            <div class="text">
+               YouTube
+            </div>
+         </a>
+      </div>
+      <br><br><br><br><br>
+      <script>
+         var myVar;
+         
+         function myFunction() {
+           myVar = setTimeout(showPage, 3000);
+         }
+         
+         function showPage() {
+           document.getElementById("loader").style.display = "none";
+           document.getElementById("myDiv").style.display = "block";
+         }
+         </script>
+   </body>
+</html>

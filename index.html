@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./images/logopeugeot.png" type="image/x-icon">
+    <title>Peugeot</title>
+    <link rel="stylesheet" href="styleEE.css">
+  </head>
+  <body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+    <nav class="nav">
+        <div class="container">
+            <button class="logo1"><a href="#">Code information</a></button>
+            <a href="#"><img src="./images/logonav.png" alt="logo" class="logo"></a>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="Crédit.html">Nous contacter</a></li>
+                    <li><a href="Peugeot presentation et histoire.html">Histoire</a></li>
+                    <li><a href="Marché peugeot.html">Marché</a></li>
+                    <li><a href="Conclusion.html">Conclusion</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+    <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+			<h2 class="myH2">Qu'est ce que c'est ?</h2>
+			<p class="myP">Ceci est site web qui a pour but de présenter une entreprise</p>
+			<p class="myP">Je me suis inspiré de ces créateurs: (<a href="https://codepen.io/abdosteif/pen/bRoyMb?editors=1100">https://codepen.io/abdosteif/pen/bRoyMb?editors=1100</a>)
+			et Dicson <a href="https://codepen.io/dicson/pen/waKPgQ">(https://codepen.io/dicson/pen/waKPgQ)</a></p>
+			<p class="myP">L'entreprise:</p>
+				<p class="myP">
+				L'entreprise qui sera présenter dans ce site est l'entrprise peugeot. Une entreprise automobile francaise.
+        Vous allez découvrir tout au long de ces page web interactive l'histoir les marché et encore bien plus sur l'entrerpise peugeot.
+				
+      </p>
+    
+    </div>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 1000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+        </script>
+        
+
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html> 
+<html>
+    <head>
+        <meta>
+        <meta>
+    <link rel="stylesheet" href="styleM.css">
+    <link rel="shortcut icon" href="./images/logopeugeot.png" type="image/x-icon">
+        <title> Le Marché de Peugeot</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+            </style> 
+             <style>
+                @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Dancing+Script&display=swap');
+                </style> 
+
+    </head>
+
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+    
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+        
+
+        <nav class="nav">
+            <div class="container">
+                <button class="logo1"><a href="#">Code information</a></button>
+            <a href="https://axeggts.github.io/site-snt/"><img src="./images/logonav.png" alt="logo" class="logo"></a>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li class="button"><a href="Crédit.html">Nous contacter</a></li>
+                        <li class="button"><a href="Peugeot presentation et histoire.html">Histoire</a></li>
+                        <li class="button1"><a href="Marché peugeot.html">Marché</a></li>
+                        <li class="button"><a href="Conclusion.html">Conclusion</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    
+        <section class="home">
+        </section>
+        <div style="height: 1000px" class="Height">
+            <!-- just to make scrolling effect possible -->
+                    <p class="myP">
+                        <h2 class="titre"> Le marché de Peugeot:</h2>
+                        <br>
+                        <div id="conteneur">
+                        <li> Peugeot fait donc partie du groupe PSA qui possède ces autres marques de voiture suivante :</li>
+                        <li>Citroën-DS-Opel-Vauxhall -Alfa Romeo -Fiat -Maserati -Lancia -Jeep -Chrysler -Dodge -RAM</li>
+                        <br>
+                        <li>Peugeot S.A. est une société anonyme à Directoire et Conseil de Surveillance de droit français. Son siège social se situe 7 rue Henri Sainte-Claire Deville, 92500 Rueil-Malmaison. La Société est immatriculée au Registre du Commerce et des Sociétés de Nanterre sous le numéro 552 100 554.
+                        automobiles</li>
+                        <h1></h1>
+                        <li> Peugeot a un chiffre d'affaires net de 32,6 Md€</li>
+                        <br>
+                        <li> Peugeot-Citroën (PSA) et italo-américain Fiat Chrysler (FCA), a publié mercredi un bénéfice net de 13,4 milliards d'euros en 2021, ...
+                        </li>
+                        <h3 class="important">Information sur les salarier:
+                        </h3>
+                    <ul>
+                    <li>208.780 salaries</li>
+                    <li>51297 F (15%)</li>
+                    <li>157483 H (75%)</li>
+                    </ul>
+                    <h3  class="important">Leurs principaux concurrents sont :</h3>
+                    <ul>
+                        <li>Ford</li>
+                        <li>Nissan</li>
+                        <li>Renault</li>
+                        <li>Toyota</li>
+                        <li>Volkswagen</li>
+                
+                    </ul>
+                    <li>Il vise comme publique les particuliers et les entreprise (auto-école, voiture de déplacement professionnelle pour une entreprise).
+                        Peugeot propose une grande variété de voiture, allant de la petite citadine (électrique, hybride ou thermique) au SUV (thermique ou hybride).
+                        Il propose pour les entreprises en particulier ou aux particuliers, des voitures utilitaires léger.
+                        </li>
+                        <br>
+                        <li>Dans un marché VU en hausse de + 7,5 %, PEUGEOT affiche une part de marché de 17,8 %.</li>
+                        <li>La dynamique se poursuit en 2018 ! Au 1er trimestre, PEUGEOT affiche la meilleure progression des ventes parmi les marques du top 10 européen.
+                            En 2012 Peugeot on subit une perte de plus de 2 milliard d’euro de chiffre d’affaire. En cause : la crise en Europe, mais aussi de mauvaises décisions stratégiques.
+                            International</li>
+                            <br>
+                            <li>Avec une stratégie Web to Store, des campagnes de lancement digitales innovantes et la digitalisation du point de vente (stratégie In-store), Peugeot excelle dans la création de passerelles on et off line, qui constituent aujourd'hui un des principaux leviers de conquête de la marque. </li>
+                </div>
+                    
+          </p>
+        
+        </div>
+    
+    <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+        <script>
+            var myVar;
+            
+            function myFunction() {
+              myVar = setTimeout(showPage, 3000);
+            }
+            
+            function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+            </script>
+        
+    
+    
+</body>
+</html>

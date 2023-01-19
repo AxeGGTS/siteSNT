@@ -1,0 +1,96 @@
+<!doctype html> 
+<html>
+    <head>
+        <meta>
+        <meta>
+    <link rel="stylesheet" href="styleCN.css">
+    <link rel="shortcut icon" href="./images/logopeugeot.png" type="image/x-icon">
+        <title>Peugeot Conclusion</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+            </style> 
+             <style>
+                @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Dancing+Script&display=swap');
+                </style> 
+
+    </head>
+
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+    
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+        
+
+        <nav class="nav">
+            <div class="container">
+                <button class="logo1"><a href="">Code information</a></button>
+            <a href="https://axeggts.github.io/site-snt/"><img src="./images/logonav.png" alt="logo" class="logo"></a>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li class="button"><a href="Crédit.html">Nous contacter</a></li>
+                        <li class="button"><a href="Peugeot presentation et histoire.html">Histoire</a></li>
+                        <li class="button"><a href="Marché peugeot.html">Marché</a></li>
+                        <li class="button1"><a href="Conclusion.html">Conclusion</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    
+        <section class="home">
+        </section>
+        <div style="height: 1000px" class="Height">
+            <!-- just to make scrolling effect possible -->
+                    <p class="myP">
+                        <h2 class="titre">Conclusion:</h2>
+    <div id="conteneur">
+    <p>La société Peugeot a été fondée en 1810 par les frères Isidore et Pierre Clergue, qui fabriquaient des machines à coudre et des ouvre-portes. </p>
+    <p> La société a été la première à produire des voitures en utilisant une approche "synthétique". </p>
+    <p> En 1905, Émile PEUGEOT commence à fabriquer et à vendre sa première voiture en France. </p>
+    <p> l'a conduit à devenir l'une des plus grandes entreprises de construction automobile en Europe à l'époque. </p>
+    <p> Leur slogan "Pas du temps pour les Peugeot" signifie qu'elle est bien faite, efficace et ne nécessite pas trop d'attention. </p>
+    <p> Dans les années 1920, Jehan Courtuzel a repris l'entreprise de construction automobile de son père et a commencé à produire des voitures en série. </p>
+    <p>C'est sous sa direction que Peugeot a commencé à exporter des voitures a l'international emmagasinnant un chiffres d'affaires collossal de 32,5 MD $ (2021)</p>
+<p>Si vous êtes arrivés jusqu'ici c'est que vous avez fini notre présentation sur l'entreprise peugeot, n'ésiter pas a aller vous detendre en écoutant de la music <a href="music.html">ici</a></p>
+    </div>
+        
+        </div>
+    
+    <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+        <script>
+            var myVar;
+            
+        
+ function myFunction() {
+              myVar = setTimeout(showPage, 3000);
+            }
+            
+
+
+            function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+            </script>
+    
+    
+</body>
+</html>
