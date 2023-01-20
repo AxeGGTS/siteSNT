@@ -175,9 +175,99 @@ body {
 }
 
 @media screen and (max-width:1200px) {
+
+    .nav {
+        width: 100%;
+        height: 200px;
+        position: fixed;
+        line-height: 65px;
+        text-align: center;
+    }
+    .logo {
+        left: 48%;
+        right: 52%;
+        margin-top: 12px;
+        position: fixed;
+        height: 150px;
+        transition: 500ms;
+    }
+    .logo a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .logo:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+    .logo1{
+    
+        left: 20px;
+        margin-top: 15px;
+        position: fixed;
+        text-decoration: none;
+       color: white;
+       border: none;
+       font-size: 50px;
+       border-radius: 30px;
+       background:#00d7e6;
+       padding: 50px 25px;
+       transition: .4s;
+       font-weight: bold;
+    }
+    .logo1 a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .logo1:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    li{
+        font-size: 2.5em;
+    }
+    .titre{
+        font-size: 3.5em;
+    }
+    h3{
+        font-size: 3em;
+    }
+
+    #conteneur p{
+        font-size: 2.5em;
+    }
+
+
+
+
+
+
+
+
     .home {
         width: 128.5%;
-        height: 100vh;
+        height: 50vh;
         background-image: url("images/test.jpg");
         background-position: center top;
         background-size:cover;
@@ -248,13 +338,15 @@ body {
 
 .navTrigger {
     cursor: pointer;
-    width: 30px;
-    height: 25px;
+    width: 100px;
+    height: 50px;
     margin: auto;
     position: absolute;
     right: 30px;
     top: 0;
     bottom: 0;
+    margin-right: 30px;
+    margin-bottom: 8%;
 }
 
 .navTrigger i {
@@ -263,7 +355,8 @@ body {
     content: '';
     display: block;
     width: 100%;
-    height: 4px;
+    height: 22px;
+    margin: 10px;
 }
 
 .navTrigger i:nth-child(1) {
@@ -344,10 +437,10 @@ body {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
     50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
+        -webkit-transform: translateY(26px) rotate(0deg);
     }
     100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
+        -webkit-transform: translateY(26px) rotate(135deg);
     }
 }
 
@@ -356,10 +449,10 @@ body {
         transform: translateY(0px) rotate(0deg);
     }
     50% {
-        transform: translateY(9px) rotate(0deg);
+        transform: translateY(32px) rotate(0deg);
     }
     100% {
-        transform: translateY(9px) rotate(135deg);
+        transform: translateY(26px) rotate(135deg);
     }
 }
 
@@ -368,10 +461,10 @@ body {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
     50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
+        -webkit-transform: translateY(26px) rotate(0deg);
     }
     100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
+        -webkit-transform: translateY(26px) rotate(135deg);
     }
 }
 
@@ -380,10 +473,10 @@ body {
         transform: translateY(0px) rotate(0deg);
     }
     50% {
-        transform: translateY(9px) rotate(0deg);
+        transform: translateY(32px) rotate(0deg);
     }
     100% {
-        transform: translateY(9px) rotate(135deg);
+        transform: translateY(26px) rotate(135deg);
     }
 }
 
@@ -392,10 +485,10 @@ body {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
     50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
+        -webkit-transform: translateY(-40px) rotate(0deg);
     }
     100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
+        -webkit-transform: translateY(-40px) rotate(135deg);
     }
 }
 
@@ -404,10 +497,10 @@ body {
         transform: translateY(0px) rotate(0deg);
     }
     50% {
-        transform: translateY(-9px) rotate(0deg);
+        transform: translateY(-32px) rotate(0deg);
     }
     100% {
-        transform: translateY(-9px) rotate(135deg);
+        transform: translateY(-40px) rotate(135deg);
     }
 }
 
@@ -416,10 +509,10 @@ body {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
     50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
+        -webkit-transform: translateY(-40px) rotate(0deg);
     }
     100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
+        -webkit-transform: translateY(-40px) rotate(135deg);
     }
 }
 
@@ -428,10 +521,10 @@ body {
         transform: translateY(0px) rotate(0deg);
     }
     50% {
-        transform: translateY(-9px) rotate(0deg);
+        transform: translateY(-32px) rotate(0deg);
     }
     100% {
-        transform: translateY(-9px) rotate(135deg);
+        transform: translateY(-40px) rotate(135deg);
     }
 }
 

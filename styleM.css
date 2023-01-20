@@ -182,15 +182,95 @@ body {
 }
 
 @media screen and (max-width:1200px) {
+
+    .nav {
+        width: 100%;
+        height: 200px;
+        position: fixed;
+        line-height: 65px;
+        text-align: center;
+    }
+    .logo {
+        left: 48%;
+        right: 52%;
+        margin-top: 12px;
+        position: fixed;
+        height: 150px;
+        transition: 500ms;
+    }
+    .logo a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .logo:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+    .logo1{
+    
+        left: 20px;
+        margin-top: 15px;
+        position: fixed;
+        text-decoration: none;
+       color: white;
+       border: none;
+       font-size: 50px;
+       border-radius: 30px;
+       background:#00d7e6;
+       padding: 50px 25px;
+       transition: .4s;
+       font-weight: bold;
+    }
+    .logo1 a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .logo1:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .home {
     width: 128.5%;
-    height: 100vh;
+    height: 50vh;
     background-image: url("images/test.jpg");
     background-position: center top;
 	background-size:cover;
     object-fit: cover;
 }
-    
+    li{
+        font-size: 2.5em;
+    }
+    .titre{
+        font-size: 3.5em;
+    }
+    h3{
+        font-size: 3em;
+    }
+
     .navTrigger {
         display: block;
     }
@@ -251,19 +331,212 @@ body {
     }
 }
 
-
+@media screen and (max-width: 1200px) {
+    .navTrigger {
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+        margin: auto;
+        position: absolute;
+        right: 30px;
+        top: 0;
+        bottom: 0;
+        margin-right: 30px;
+    }
+    
+    .navTrigger i {
+        background-color: #fff;
+        border-radius: 2px;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 22px;
+        margin: 10px;
+    }
+    
+    .navTrigger i:nth-child(1) {
+        -webkit-animation: outT 0.8s backwards;
+        animation: outT 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+    
+    .navTrigger i:nth-child(2) {
+        margin: 5px 0;
+        -webkit-animation: outM 0.8s backwards;
+        animation: outM 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+    
+    .navTrigger i:nth-child(3) {
+        -webkit-animation: outBtm 0.8s backwards;
+        animation: outBtm 0.8s backwards;
+        -webkit-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+    
+    .navTrigger.active i:nth-child(1) {
+        -webkit-animation: inT 0.8s forwards;
+        animation: inT 0.8s forwards;
+    }
+    
+    .navTrigger.active i:nth-child(2) {
+        -webkit-animation: inM 0.8s forwards;
+        animation: inM 0.8s forwards;
+    }
+    
+    .navTrigger.active i:nth-child(3) {
+        -webkit-animation: inBtm 0.8s forwards;
+        animation: inBtm 0.8s forwards;
+    }
+    
+    @-webkit-keyframes inM {
+        50% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(45deg);
+        }
+    }
+    
+    @keyframes inM {
+        50% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+    
+    @-webkit-keyframes outM {
+        50% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(45deg);
+        }
+    }
+    
+    @keyframes outM {
+        50% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+    
+    @-webkit-keyframes inT {
+        0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translateY(26px) rotate(0deg);
+        }
+        100% {
+            -webkit-transform: translateY(26px) rotate(135deg);
+        }
+    }
+    
+    @keyframes inT {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(32px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(26px) rotate(135deg);
+        }
+    }
+    
+    @-webkit-keyframes outT {
+        0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translateY(26px) rotate(0deg);
+        }
+        100% {
+            -webkit-transform: translateY(26px) rotate(135deg);
+        }
+    }
+    
+    @keyframes outT {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(32px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(26px) rotate(135deg);
+        }
+    }
+    
+    @-webkit-keyframes inBtm {
+        0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translateY(-40px) rotate(0deg);
+        }
+        100% {
+            -webkit-transform: translateY(-40px) rotate(135deg);
+        }
+    }
+    
+    @keyframes inBtm {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(-32px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(-40px) rotate(135deg);
+        }
+    }
+    
+    @-webkit-keyframes outBtm {
+        0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            -webkit-transform: translateY(-40px) rotate(0deg);
+        }
+        100% {
+            -webkit-transform: translateY(-40px) rotate(135deg);
+        }
+    }
+    
+    @keyframes outBtm {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(-32px) rotate(0deg);
+        }
+        100% {
+            transform: translateY(-40px) rotate(135deg);
+        }
+    }
+}
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
 .navTrigger {
     cursor: pointer;
-    width: 30px;
-    height: 25px;
+    width: 100px;
+    height: 50px;
     margin: auto;
     position: absolute;
     right: 30px;
     top: 0;
     bottom: 0;
+    margin-right: 30px;
+    margin-bottom: 8%;
 }
 
 .navTrigger i {
@@ -272,7 +545,8 @@ body {
     content: '';
     display: block;
     width: 100%;
-    height: 4px;
+    height: 22px;
+    margin: 10px;
 }
 
 .navTrigger i:nth-child(1) {
@@ -353,10 +627,10 @@ body {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
     50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
+        -webkit-transform: translateY(26px) rotate(0deg);
     }
     100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
+        -webkit-transform: translateY(26px) rotate(135deg);
     }
 }
 
@@ -365,10 +639,10 @@ body {
         transform: translateY(0px) rotate(0deg);
     }
     50% {
-        transform: translateY(9px) rotate(0deg);
+        transform: translateY(32px) rotate(0deg);
     }
     100% {
-        transform: translateY(9px) rotate(135deg);
+        transform: translateY(26px) rotate(135deg);
     }
 }
 
@@ -377,10 +651,10 @@ body {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
     50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
+        -webkit-transform: translateY(26px) rotate(0deg);
     }
     100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
+        -webkit-transform: translateY(26px) rotate(135deg);
     }
 }
 
@@ -389,10 +663,10 @@ body {
         transform: translateY(0px) rotate(0deg);
     }
     50% {
-        transform: translateY(9px) rotate(0deg);
+        transform: translateY(32px) rotate(0deg);
     }
     100% {
-        transform: translateY(9px) rotate(135deg);
+        transform: translateY(26px) rotate(135deg);
     }
 }
 
@@ -401,10 +675,10 @@ body {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
     50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
+        -webkit-transform: translateY(-40px) rotate(0deg);
     }
     100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
+        -webkit-transform: translateY(-40px) rotate(135deg);
     }
 }
 
@@ -413,10 +687,10 @@ body {
         transform: translateY(0px) rotate(0deg);
     }
     50% {
-        transform: translateY(-9px) rotate(0deg);
+        transform: translateY(-32px) rotate(0deg);
     }
     100% {
-        transform: translateY(-9px) rotate(135deg);
+        transform: translateY(-40px) rotate(135deg);
     }
 }
 
@@ -425,10 +699,10 @@ body {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
     50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
+        -webkit-transform: translateY(-40px) rotate(0deg);
     }
     100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
+        -webkit-transform: translateY(-40px) rotate(135deg);
     }
 }
 
@@ -437,10 +711,10 @@ body {
         transform: translateY(0px) rotate(0deg);
     }
     50% {
-        transform: translateY(-9px) rotate(0deg);
+        transform: translateY(-32px) rotate(0deg);
     }
     100% {
-        transform: translateY(-9px) rotate(135deg);
+        transform: translateY(-40px) rotate(135deg);
     }
 }
 

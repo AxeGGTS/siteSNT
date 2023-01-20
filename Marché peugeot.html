@@ -24,7 +24,7 @@
         <nav class="nav">
             <div class="container">
                 <button class="logo1"><a href="#">Code information</a></button>
-            <a href="https://axeggts.github.io/site-snt/"><img src="./images/logonav.png" alt="logo" class="logo"></a>
+            <a href="https://axeggts.github.io/siteSNT/"><img src="./images/logonav.png" alt="logo" class="logo"></a>
                 <div id="mainListDiv" class="main_list">
                     <ul class="navlinks">
                         <li class="button"><a href="Crédit.html">Nous contacter</a></li>
@@ -108,12 +108,13 @@
             });
         </script>
         <script>
-            var myVar;
-            
-            function myFunction() {
-              myVar = setTimeout(showPage, 3000);
+        
+            const random = (max,mini) => {
+                return Math.floor(Math.random() * (max - min + 1) + min);
             }
-            
+            function myFunction() {
+              setTimeout(showPage, 1500);
+            }
             function showPage() {
               document.getElementById("loader").style.display = "none";
               document.getElementById("myDiv").style.display = "block";
